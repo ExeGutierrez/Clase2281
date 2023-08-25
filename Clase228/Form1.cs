@@ -63,6 +63,12 @@ namespace Clase228
                 lblResultado.Text += txtFrase.Text.Substring(i,1) + "\r\n";
             }
         }
+
+        private void btExtraer_Click(object sender, EventArgs e)
+        {
+            lblResultado.Text = txtFrase.Text.Replace(txtBuscado.Text, " ");
+
+        }
     }
     }
 

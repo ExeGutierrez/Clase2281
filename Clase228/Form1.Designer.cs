@@ -37,6 +37,7 @@
             this.btBuscar = new System.Windows.Forms.Button();
             this.txtBuscado = new System.Windows.Forms.TextBox();
             this.txtDeletrear = new System.Windows.Forms.Button();
+            this.btExtraer = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtFrase
@@ -44,7 +45,7 @@
             this.txtFrase.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFrase.Location = new System.Drawing.Point(56, 31);
             this.txtFrase.Name = "txtFrase";
-            this.txtFrase.Size = new System.Drawing.Size(291, 38);
+            this.txtFrase.Size = new System.Drawing.Size(493, 38);
             this.txtFrase.TabIndex = 0;
             // 
             // btLongitud
@@ -62,7 +63,7 @@
             // 
             this.lblResultado.AutoSize = true;
             this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResultado.Location = new System.Drawing.Point(50, 117);
+            this.lblResultado.Location = new System.Drawing.Point(63, 395);
             this.lblResultado.Name = "lblResultado";
             this.lblResultado.Size = new System.Drawing.Size(0, 31);
             this.lblResultado.TabIndex = 2;
@@ -92,7 +93,7 @@
             // btMinuscula
             // 
             this.btMinuscula.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btMinuscula.Location = new System.Drawing.Point(555, 76);
+            this.btMinuscula.Location = new System.Drawing.Point(56, 120);
             this.btMinuscula.Name = "btMinuscula";
             this.btMinuscula.Size = new System.Drawing.Size(196, 36);
             this.btMinuscula.TabIndex = 5;
@@ -103,7 +104,7 @@
             // btBuscar
             // 
             this.btBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btBuscar.Location = new System.Drawing.Point(757, 76);
+            this.btBuscar.Location = new System.Drawing.Point(258, 120);
             this.btBuscar.Name = "btBuscar";
             this.btBuscar.Size = new System.Drawing.Size(196, 36);
             this.btBuscar.TabIndex = 6;
@@ -114,15 +115,15 @@
             // txtBuscado
             // 
             this.txtBuscado.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBuscado.Location = new System.Drawing.Point(386, 32);
+            this.txtBuscado.Location = new System.Drawing.Point(56, 213);
             this.txtBuscado.Name = "txtBuscado";
-            this.txtBuscado.Size = new System.Drawing.Size(291, 38);
+            this.txtBuscado.Size = new System.Drawing.Size(493, 38);
             this.txtBuscado.TabIndex = 7;
             // 
             // txtDeletrear
             // 
             this.txtDeletrear.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDeletrear.Location = new System.Drawing.Point(959, 76);
+            this.txtDeletrear.Location = new System.Drawing.Point(56, 162);
             this.txtDeletrear.Name = "txtDeletrear";
             this.txtDeletrear.Size = new System.Drawing.Size(196, 36);
             this.txtDeletrear.TabIndex = 8;
@@ -130,11 +131,23 @@
             this.txtDeletrear.UseVisualStyleBackColor = true;
             this.txtDeletrear.Click += new System.EventHandler(this.txtDeletrear_Click);
             // 
+            // btExtraer
+            // 
+            this.btExtraer.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btExtraer.Location = new System.Drawing.Point(258, 162);
+            this.btExtraer.Name = "btExtraer";
+            this.btExtraer.Size = new System.Drawing.Size(196, 36);
+            this.btExtraer.TabIndex = 9;
+            this.btExtraer.Text = "Extraer";
+            this.btExtraer.UseVisualStyleBackColor = true;
+            this.btExtraer.Click += new System.EventHandler(this.btExtraer_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1180, 450);
+            this.Controls.Add(this.btExtraer);
             this.Controls.Add(this.txtDeletrear);
             this.Controls.Add(this.txtBuscado);
             this.Controls.Add(this.btBuscar);
@@ -162,6 +175,7 @@
         private System.Windows.Forms.Button btBuscar;
         private System.Windows.Forms.TextBox txtBuscado;
         private System.Windows.Forms.Button txtDeletrear;
+        private System.Windows.Forms.Button btExtraer;
     }
 }
 
